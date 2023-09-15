@@ -1,5 +1,4 @@
 // one
-
 int euler(int x){
     int res = x;
     for(int i = 2;i <= x / i;i++){
