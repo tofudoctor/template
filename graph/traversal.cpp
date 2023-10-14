@@ -14,8 +14,11 @@ void bfs(int x){
     while(!q.empty()){
         int u = q.front();
         for(auto son : g[u]){
-            q.push(son);
-            v[son] = true;
+            if(!v[son]){
+                q.push(son);
+                v[son] = true;
+            }
+            
         }
         q.pop();
     }

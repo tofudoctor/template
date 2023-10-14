@@ -1,6 +1,8 @@
 int match[N];
 bool ch[N];
 
+// 左半(1~n1) 右半(1~n2)
+
 bool find(int x){
     for(auto it : g[x]){
         if(!ch[it]){
@@ -17,8 +19,8 @@ bool find(int x){
 
 // in main
 int ans = 0;
-for(int i = 0;i < n1;i++){
+for(int i = 0;i < n1;i++){ // 某半邊的圖
     memset(ch, 0, sizeof(ch));
     if(find(i)) ans++;
 }
-cout << ans;
+cout << ans;x

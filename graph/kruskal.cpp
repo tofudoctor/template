@@ -1,4 +1,4 @@
-vector<pair<int, PII>> edges;
+vector<pair<int, PII>> edges; // w a b
 
 int find(int x){
     if(p[x] != x) p[x] = find(p[x]);

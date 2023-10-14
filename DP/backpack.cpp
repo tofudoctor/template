@@ -32,3 +32,9 @@ int solve(){
             
     return dp[V];
 }
+
+// 區間DP
+for(區間長度)
+    for(區間的剖分點)
+        for(執行DP轉移式)
+            dp[] = ...
